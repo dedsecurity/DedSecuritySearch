@@ -1,6 +1,3 @@
-# searchengine
-A search engine with AI
-
 <h1 align="center">Ded Security Search</h1>
 
 ```bash
