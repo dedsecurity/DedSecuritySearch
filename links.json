@@ -1,0 +1,21 @@
+{"intents":
+    [
+      {
+        "tag":"Google",
+        "input":["Motor de busca", "google", "Google"],
+        "responses":["https://google.com\n\nGoogle Search"]
+      },
+      {
+        "tag":"Youtube",
+        "input":["Assistir vídeos", "Escutar músicas", "youtube", "Youtube", "assistir videos", "escutar musicas"],
+        "responses":["https://youtube.com\n\nAproveite vídeos e músicas que você ama, envie e compartilhe conteúdo original com amigos, parentes e o mundo no YouTube."]
+
+      },
+      {
+        "tag":"Gmail",
+        "input":["Enviar email", "Gmail", "gmail", "email", "mandar email"],
+        "responses":["https://gmail.com\n\nGmail é um e-mail intuitivo, eficiente e útil. 15 GB de armazenamento, menos spam e acesso móvel."]
+      }
+
+    ]
+  }
