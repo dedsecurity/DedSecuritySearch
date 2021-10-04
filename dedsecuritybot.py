@@ -63,7 +63,7 @@ model  = Model(i,x)
 
 model.compile(loss="sparse_categorical_crossentropy",optimizer='adam',metrics=['accuracy'])
 
-train = model.fit(x_train,y_train,epochs=200)
+train = model.fit(x_train,y_train,epochs=300)
 
 while True:
   print("\033[32mDed Security Search \033[m")
