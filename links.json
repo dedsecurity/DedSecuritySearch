@@ -3,7 +3,7 @@
       {
         "tag":"Google",
         "input":["Motor de busca", "google", "Google"],
-        "responses":["https://google.com\n\nGoogle Search"]
+        "responses":["https://google.com\n\nPesquise as informações do mundo, incluindo páginas da web, imagens, vídeos e muito mais."]
       },
       {
         "tag":"Youtube",
@@ -15,6 +15,26 @@
         "tag":"Gmail",
         "input":["Enviar email", "Gmail", "gmail", "email", "mandar email"],
         "responses":["https://gmail.com\n\nGmail é um e-mail intuitivo, eficiente e útil. 15 GB de armazenamento, menos spam e acesso móvel."]
+      },
+      {
+        "tag":"Facebook",
+        "input":["facebook", "Facebook", "facebook messenger"],
+        "responses":["https://facebook.com\n\nCrie uma conta ou entre no Facebook. Conecte-se com amigos, familiares e outras pessoas que você conheça."]
+      },
+      {
+        "tag":"Instagram",
+        "input":["instagram", "Instagram"],
+        "responses":["https://instagram.com\n\nDe rochas em forma de coração a nuvens, há um mundo cheio de amor no Instagram."]
+      },
+      {
+        "tag":"Whatsappweb",
+        "input":["whatsapp web", "zap web", "zap"],
+        "responses":["https://web.whatsapp.com/\n\nEnvie e receba rapidamente mensagens do WhatsApp diretamente do seu computador."]
+      },
+      {
+        "tag":"Dedsecurity",
+        "input":["dedsecurity", "ded security", "dedsecurity framework"],
+        "responses":["https://dedsecurity.com"]
       }
 
     ]
