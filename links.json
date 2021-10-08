@@ -28,13 +28,43 @@
       },
       {
         "tag":"Whatsappweb",
-        "input":["whatsapp web", "zap web", "zap"],
+        "input":["whatsapp web", "zap web", "zap", "whatsapp"],
         "responses":["https://web.whatsapp.com/\n\nEnvie e receba rapidamente mensagens do WhatsApp diretamente do seu computador."]
       },
       {
         "tag":"Dedsecurity",
         "input":["dedsecurity", "ded security", "dedsecurity framework"],
         "responses":["https://dedsecurity.com"]
+      },
+      {
+        "tag":"Wikipedia",
+        "input":["wikipedia", "wiki", "wiki pedia"],
+        "responses":["https://www.wikipedia.org/\n\nWikipedia é uma enciclopédia online gratuita, criada e editada por voluntários em todo o mundo e hospedada pela Fundação Wikimedia."]
+      },
+      {
+        "tag":"Github",
+        "input":["github", "Github", "GitHub", "código fonte"],
+        "responses":["https://github.com\n\nO GitHub é onde mais de 65 milhões de desenvolvedores moldam o futuro do software."]
+      },
+      {
+        "tag":"Googledrive",
+        "input":["Google drive", "guardar arquivos", "Google Drive", "google drive", "drive"],
+        "responses":["https://drive.google.com/"]
+      },
+      {
+        "tag":"Googlekeep",
+        "input":["google keep", "Google Keep", "Google keep", "keep"],
+        "responses":["https://keep.google.com/"]
+      },
+      {
+        "tag":"Linkedin",
+        "input":["Linkedin", "linkedin", "LinkedIn"],
+        "responses":["https://www.linkedin.com\n\nMais de 750 milhões de usuários | Gerencie a sua identidade profissional."]
+      },
+      {
+        "tag":"Googleteachablemachine",
+        "input":["google teachablemachine", "google ai", "google ia", "Google Teachablemachine", "Google teachablemachine"],
+        "responses":["https://teachablemachine.withgoogle.com/"]
       }
 
     ]
