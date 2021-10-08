@@ -16,12 +16,12 @@ import string
 import random
 
 with open('./links.json') as content:
-  data1 = json.load(content)
+  datali = json.load(content)
 
 tags = []
 inputs = []
 responses={}
-for intent in data1['intents']:
+for intent in datali['intents']:
   responses[intent['tag']]=intent['responses']
   for lines in intent['input']:
     inputs.append(lines)
@@ -59,7 +59,7 @@ x = Embedding(vocabulary+1,10)(i)
 x = LSTM(10,return_sequences=True)(x)
 x = Flatten()(x)
 x = Dense(output_length,activation="softmax")(x)
-model  = Model(i,x)
+model = Model(i,x)
 
 model.compile(loss="sparse_categorical_crossentropy",optimizer='adam',metrics=['accuracy'])
 
