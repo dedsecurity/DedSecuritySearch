@@ -65,6 +65,21 @@
         "tag":"Googleteachablemachine",
         "input":["google teachablemachine", "google ai", "google ia", "Google Teachablemachine", "Google teachablemachine"],
         "responses":["https://teachablemachine.withgoogle.com/"]
+      },
+      {
+        "tag":"Googlephotos",
+        "input":["Google photos", "google photos", "photos", "ver fotos"],
+        "responses":["photos.google.com\n\nO Google Fotos é o local certo para todos os seus vídeos e fotos, organizados automaticamente e fáceis de compartilhar."]
+      },
+      {
+        "tag":"Googledocs",
+        "input":["Google docs", "google docs", "docs", "editar arquivos"],
+        "responses":["https://docs.google.com/"]
+      },
+      {
+        "tag":"Googledomains",
+        "input":["Google Domains", "google domains", "comprar domínios", "criar domínios"],
+        "responses":["https://domains.google.com/\n\nUse a tecnologia do Google a favor do seu site e sua presença on-line. Comece agora mesmo! Tenha um domínio personalizado. Crie um site e um e-mail personalizados do Workspace."]
       }
 
     ]
