@@ -9,10 +9,12 @@ import nltk
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.layers import Input, Embedding, LSTM , Dense,GlobalMaxPooling1D,Flatten
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+from transformers import BertModel, BertTokenizer
 from tensorflow.keras.models import Model
 from sklearn.preprocessing import LabelEncoder
 import matplotlib.pyplot as plt
 import string
+import torch
 import random
 
 with open('./links.json') as content:
@@ -32,6 +34,8 @@ data = pd.DataFrame({"inputs":inputs,
 
 data
 data = data.sample(frac=1)
+
+
 
 data['inputs'] = data['inputs'].apply(lambda wrd:[ltrs.lower() for ltrs in wrd if ltrs not in string.punctuation])
 data['inputs'] = data['inputs'].apply(lambda wrd: ''.join(wrd))
@@ -64,6 +68,15 @@ model = Model(i,x)
 model.compile(loss="sparse_categorical_crossentropy",optimizer='adam',metrics=['accuracy'])
 
 train = model.fit(x_train,y_train,epochs=300)
+
+"""
+model = BertModel.from_pretrained('bert-base-uncased')
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+
+test = "I Love Brazil"
+tokens = tokenizer.tokenize(test)
+print(tokens)
+"""
 
 while True:
   print("\033[32mDed Security Search \033[m")
