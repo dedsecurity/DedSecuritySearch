@@ -35,8 +35,6 @@ data = pd.DataFrame({"inputs":inputs,
 data
 data = data.sample(frac=1)
 
-
-
 data['inputs'] = data['inputs'].apply(lambda wrd:[ltrs.lower() for ltrs in wrd if ltrs not in string.punctuation])
 data['inputs'] = data['inputs'].apply(lambda wrd: ''.join(wrd))
 data
@@ -69,19 +67,25 @@ model.compile(loss="sparse_categorical_crossentropy",optimizer='adam',metrics=['
 
 train = model.fit(x_train,y_train,epochs=300)
 
-"""
-model = BertModel.from_pretrained('bert-base-uncased')
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-
-test = "I Love Brazil"
-tokens = tokenizer.tokenize(test)
-print(tokens)
-"""
+model1 = BertModel.from_pretrained('bert-base-uncased')
+tokenizer1 = BertTokenizer.from_pretrained('bert-base-uncased')
 
 while True:
+
+  import random
+
   print("\033[32mDed Security Search \033[m")
   texts_p = []
   prediction_input = input('\033[36mSearch: \033[m')
+
+  tokens = tokenizer1.tokenize(prediction_input)
+  tokens = ['[CLS]'] + tokens + ['[SEP]']
+  tokens = tokens + ['[PAD]'] + ['[PAD]']
+  attention_mask = [1 if i!= '[PAD]' else 0 for i in tokens]
+  token_ids = tokenizer1.convert_tokens_to_ids(tokens)
+  token_ids = torch.tensor(token_ids).unsqueeze(0)
+  attention_mask = torch.tensor(attention_mask).unsqueeze(0)
+  hidden_rep, cls_head = model1(token_ids, attention_mask = attention_mask)
 
   prediction_input = [letters.lower() for letters in prediction_input if letters not in string.punctuation]
   prediction_input = ''.join(prediction_input)
